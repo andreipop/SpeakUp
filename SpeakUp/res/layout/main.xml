@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<EditText 
+		android:id="@+id/InputField"  
+		android:lines="2"
+		android:hint="Type what you want to say"
+	    android:inputType="text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="fill_horizontal" 
+	    android:gravity="fill_horizontal"
+	    />
+	    
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent">    
+	<Button
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|center_horizontal"
+		android:id="@+id/SpeakButton"
+		android:text="Speak"
+		android:layout_width="fill_parent" 
+		android:layout_weight="1"
+	/>
+	
+	<Button
+		android:gravity="center_vertical|center_horizontal"
+		android:id="@+id/ClearField"
+		android:text="Clear"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:layout_weight="1"
+	/>
+	</LinearLayout>
+	<SeekBar 
+	android:id="@+id/VolumeBar" 
+	android:layout_height="wrap_content" 
+	android:layout_width="match_parent">
+	</SeekBar>
+</LinearLayout>
